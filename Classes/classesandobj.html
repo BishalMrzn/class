@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Attendence {
+        present() {
+          alert(this.name + "You are present" + this.good);
+        }
+        absent() {
+          alert(this.name + "You are absent because" + this.why);
+        }
+        fill(name, whyabsent, goodreason) {
+          this.name = name;
+          this.why = whyabsent;
+          this.good = goodreason;
+        }
+      }
+      let student1 = new Attendence();
+      student1.fill("Bishal", "Sick", "cool");
+      let student2 = new Attendence();
+      student2.fill("Saroj", "Going out", "awesome");
+
+      student1.present();
+      student2.present();
+      student2.absent();
+    </script>
+  </body>
+</html>
